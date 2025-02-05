@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+//import axios from 'axios';
 import styled, { keyframes } from 'styled-components';
 import Taj from './static/images/bg.jpeg'; 
 import Navbar from './NavBar2';
@@ -142,25 +142,8 @@ const SignupPage = () => {
   
 
   const handleSignup = async (e) => {
-    e.preventDefault();
-
-    const user = {
-      username: username, 
-      email: email,
-      password: password,
-    };
-
-    try {
-      const response = await axios.post("http://localhost:8080/user", user);
-      console.log(response.data);
-      alert("SignUp Sucessful");
-
-      // Redirect after signup
-      navigate("/login"); // or any other route
-    } catch (error) {
-      console.error("There was an error during signup!", error);
-      alert("Signup failed");
-    }
+    alert("Signup Successfull");
+    navigate("/login");
   };
 
   return (
