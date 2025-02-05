@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #100f0cd7;
+  color:#faf3e0;
+  scroll-behavior: smooth;
+}
+
+.culture-homepage {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('#') no-repeat center center/cover;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.hero-section.animate {
+  opacity: 2;
+  transform: translateY(0);
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 550;
+  color: #fff;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  animation: fadeInUp 1ms ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #ffff;
+  margin-bottom: 35px;
+  opacity: 0;
+  animation: fadeIn 1.8s ease-in-out 0.5s forwards;
+}
+
+.hero-button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  color: #090909;
+  background-color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.hero-button:hover {
+  background-color: #6ff3f7;
+  color: #fff;
+  box-shadow: 0 15px 30px rgba(197, 103, 103, 0.2);
+}
+
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  position: relative;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+  color: white; /* Ensuring section description is white */
+}
+
+.heritage-gallery,
+.food-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.gallery-item {
+  flex: 1;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.festivals-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.festival-item {
+  background-size: cover;
+  background-position: center;
+  width: 35%;
+  height: 300px;
+  position: relative;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+}
+
+.festival-item:hover {
+  transform: scale(1.05);
+}
+
+.festival-item h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.instruments-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.join-us-section {
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.team-gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  color: #fff;
+}
+
+.team-member {
+  text-align: center;
+  color: #fff;
+}
+
+.team-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 70%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-image:hover {
+  transform: scale(1.1); /* Scale image on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
