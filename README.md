@@ -22,7 +22,3 @@ The **Indian Heritage Web App** is an interactive platform designed to provide u
 
 ---
 
-## **🛠️ Installation and Setup**
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/indian-heritage-web-app.git
